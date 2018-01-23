@@ -1,0 +1,187 @@
+*tt {
+	border: 2px black solid;
+}
+
+body {
+	margin: 0;
+	font-size: 1em;
+	line-height: 1.5;
+	font-weight: normal;	
+}
+
+h1 {
+	font-size: 5.625em; /* 90px/16px */
+	color: rgb(255,255,255);
+	text-transform: uppercase;
+	font-weight: normal;
+	text-shadow: 5px 8px 10px #222;
+}
+
+h2 {
+	font-size: 3.3125em; /* 53px/16px */
+	text-decoration: underline;
+	font-weight: normal;
+}
+
+span {
+	text-transform: uppercase;		
+}
+
+
+h3 {
+	font-size: 1.25em; /* 20px/16px */
+	color: #48525c;
+}
+
+img {
+	max-width: 100%;
+	margin-bottom: 20px;
+	border-radius: 10%;
+}
+
+ul,
+ol {
+	margin: 30px 0;
+}
+
+li {
+	margin-bottom: 10px;
+}
+/****************
+ID Selectors
+*****************/
+#main-footer {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	border-bottom: solid 10px orange;
+}
+
+
+
+/****************
+class selectors
+*****************/
+.main-header {
+	background-color: orange;
+	height: 850px;
+	padding-top: 170px; 
+	background-image: 	linear-gradient(#ffa949, transparent 90%),
+						linear-gradient(0deg, #fff, transparent),
+						url('../img/mountains.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-bottom: 50px;
+	
+}
+
+
+
+.primary-content,
+.main-header {
+	text-align: center;
+}
+
+.primary-content,
+.secondary-content {
+	width: 60%;
+	margin: auto;
+}
+
+.t-border {
+	border-top: 2px solid lightgrey;
+}
+
+.title {
+	color: white;
+	font-size: 1.625em; /* 26px/16px */
+}
+
+.wildlife {
+	color: white;
+	background-color: #434a52;
+	padding: 16% 20%;
+	border-top: 10px solid orange;
+	margin: 105px 0 60px;
+	background-image: 	radial-gradient(#000000, transparent),
+						url('../img/bear.jpg');
+	background-size: cover;
+	background-position: center;
+	box-shadow: inset 0 0 50px 10px rgba(0,0,0,1);
+	border-radius: 50% 25px;
+
+}
+
+.callout {
+	font-size: 1.25em;
+	padding: 0 9px 3px;
+	border-bottom: 3px solid;
+	margin-bottom: 20px;
+	display: inline-block;
+}
+
+.arrow {
+	width: 50px;
+}
+
+
+/****************
+Floates
+*****************/
+
+.resort,
+.tips {
+	width: 46.5%;
+}
+
+.resort {
+	float: right;
+}
+
+.tips {
+	float: left;
+}
+
+.group:after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+/****************
+Descendant selectors
+*****************/
+
+/*ol li {
+	background-color: tomato;
+	color: white;
+	margin-bottom: 5px; 
+}*/
+
+/*************************
+ Pseudo Classes
+**************************/
+
+a:link {
+	color: orange;
+	text-decoration: none;
+}
+
+a:visited {
+	color: orange;
+}
+
+a:hover {
+	color: rgb(0,0,0);
+	outline: .5px solid red;
+	font-size: 1.2em;
+}
+
+a:active {
+	color: forestgreen;	
+}
+
+a:focus {
+	
+	border: 2px dashed brown;
+}
